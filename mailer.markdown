@@ -12,140 +12,132 @@ Data Model
 
 * Dependencies: _None_
 	
-* NoticeType
+* Message
 
-	* label (char 40)
-	* display (char 50
-	* description (char 100)
-
-* ObservedItem
-
-	* user (foreign-key -> django.contrib.auth.User)
-	* content_type (foreign-key -> django.contrib.contenttypes.ContentType)
-	* observed_object (foreign-key -> django.contrib.contenttypes.GenericForeignKey)
-	* notice_type (foreign-key -> NoticeType)
-	* added (datetime)
-	* signal (text)
+	* to_address (char 50)
+	* from_address (char 50)
+	* subject (char 100)
+	* message_body (text)
+	* when_added (datetime)
+	* priority (char - choices of PRIORITIES)
+		* '1' : 'high'
+		* '2' : 'medium'
+		* '3' : 'low'
+		* '4' : 'deferred'
 	
-	* Methods (ObservedItemManager) - ObservedItem.objects...
+	* Methods (MessageManager) - Message.objects...
 	
-		* `all_for(self, observed, signal)`
+		* `high_priority(self)`
 		
-		Returns all ObservedItems for an observed object,
-        to be sent when a signal is emited.
+		the high priority messages in the queue
 
-		* `get_for(self, observed, observer, signal)`
-	
-	* Methods - ObservedItem...
-	
-		* `send_notice(self)`
+		* `medium_priority(self)`
+		
+		the medium priority messages in the queue
+		
+		* `low_priority(self)`
+		
+		the low priority messages in the queue
 
-* Methods (notification.models...)
+		* `non_deferred(self)`
+		
+		the messages in the queue not deferred
+		
+		* `deferred(self)`
+		
+		the deferred messages in the queue
+		
+		* `retry_deferred(self, new_priority=2)`
+	
+	* Methods - Message...
+	
+		* `defer(self)`
+	
+		* `retry(self, new_priority=2)`
 
-	* `get_notification_setting(user, notice_type, medium)`
-	
-		gets or creates a notification setting to return
+* DontSendEntry
 
-	* `should_send(user, notice_type, medium)`
+	* to_address (char 50)
+	* when_added (datetime)
+
+	* Methods (DontSendEntryManager) - DontSendEntry.objects...
 	
-		returns bool from user's notification setting
+		* `has_address(self, address)`
+		
+		is the given address on the don't send list?
+
+
+* MessageLog
+
+	* to_address (char 50)
+	* from_address (char 50)
+	* subject (char 100)
+	* message_body (text)
+	* when_added (datetime)
+	* priority (char - choices PRIORITIES)
+	* when_attempted (datetime)
+	* result (char - choices RESULT_CODES)
+		* RESULT_CODES
+			* '1' : 'success'
+			* '2' : 'don\'t send'
+			* '3' : 'failure'
+	* log_message (text)
 	
+	* Methods (MessageLogManager) - MessageLog.objects...
+	
+		* `log(self, message, result_code, log_message = '')`
+		
+		create a log entry for an attempt to send the given message and
+        record the given result and (optionally) a log message
+
 URL Design
 ----------
 
-	url(r'^$', notices, name="notification_notices"),
-	url(r'^(\d+)/$', single, name="notification_notice"),
-	url(r'^feed/$', feed_for_user, name="notification_feed_for_user"),
-	url(r'^mark_all_seen/$', mark_all_seen, name="notification_mark_all_seen"),
+_None_
 
 Views & Templates
 -----------------
 
-* `notices(request)`
-	* uses `@login_required`
-
-	* default template: notification/notices.html
-	* context
-		* notices
-		* notice_types
-		* notice_settings
-
-* `single(request, id)`
-	* uses `@login_required`
-	
-	* default template: notification/single.html
-	* context:
-		* notice
-
-* Embedded Default Templates
-	* _from django notification_
-		* email_body.txt [http://github.com/jtauber/django-notification/blob/master/notification/templates/notification/email_body.txt](http://github.com/jtauber/django-notification/blob/master/notification/templates/notification/email_body.txt)
-
-	* _from pinax_
-		* notification/notices.html [http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/notification/notices.html](http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/notification/notices.html)
-
-	* _additional notice templates are included in other pinax applications_
+_None_
 	
 TemplateTags
 ------------
 
-* ifsetting
-	* A node set assocaited with %else% and %endifsetting% that allows a control flow in the template based on the variable provided. The variable checks against the project's settings (settings.py) and will render (or not) the encapsulated content on a boolean check against the defined setting.
-	* Example:
-
-		`{% ifsetting ACCOUNT_OPEN_SIGNUP %} 
-			content...
-		{% else %}
-			alternate content...
-		{% endifsetting %}`
+_None_
 
 Filters
 -------
 
-* in_list
-	* tests if a value is in arg - assuming arg is a list. Based on [http://www.djangosnippets.org/snippets/379/](http://www.djangosnippets.org/snippets/379/)
-	* Example:
-
-		`The item is 
-		{% if item|in_list:list %} 
-		    in list 
-		{% else %} 
-		    not in list
-		{% endif %}`
+_None_
 
 View Decorators
 ---------------
 
-* `basic_auth_required(realm=None, test_func=None, callback_func=None)`
-
-    This decorator should be used with views that need simple authentication
-    against Django's authentication framework.
-    
-    The ``realm`` string is shown during the basic auth query.
-    
-    It takes a ``test_func`` argument that is used to validate the given
-    credentials and return the decorated function if successful.
-    
-    If unsuccessful the decorator will try to authenticate and checks if the
-    user has the ``is_active`` field set to True.
-    
-    In case of a successful authentication  the ``callback_func`` will be
-    called by passing the ``request`` and the ``user`` object. After that the
-    actual view function will be called.
-    
-    If all of the above fails a "Authorization Required" message will be shown.
+_None_
 
 Forms
 -----
 
-* UserCreationForm
-	* username
-	* password1
-	* password2
-	
-	A form that creates a user, with no privileges, from the given username and password.
+_None_
 
 Constants
 ---------
 
 * VERSION
+* PRIORITY_MAPPING
+	* "high": "1"
+	* "medium": "2"
+	* "low": "3"
+	* "deferred": "4"
+* settings.EMAIL\_SUBJECT\_PREFIX
+* settings.SERVER\_EMAIL
+
+Methods
+-------
+
+* `send_mail(subject, message, from_email, recipient_list, priority="medium",
+              fail_silently=False, auth_user=None, auth_password=None)`
+
+* `mail_admins(subject, message, fail_silently=False, priority="medium")`
+
+* `mail_managers(subject, message, fail_silently=False, priority="medium")`

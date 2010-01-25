@@ -69,6 +69,14 @@ Views & Templates
 		* django\_openid/register\_sent\_email.html [http://github.com/brosner/django-openid/blob/master/django\_openid/templates/django\_openid/register\_email\_sent.html](http://github.com/brosner/django-openid/blob/master/django_openid/templates/django_openid/register_email_sent.html)
 		* django\_openid/set\_password.html [http://github.com/brosner/django-openid/blob/master/django\_openid/templates/django\_openid/set\_password.html](http://github.com/brosner/django-openid/blob/master/django_openid/templates/django_openid/set_password.html)
 		* django\_openid/this\_is\_an\_openid\_server.html [http://github.com/brosner/django-openid/blob/master/django\_openid/templates/django\_openid/this\_is\_an\_openid\_server.html](http://github.com/brosner/django-openid/blob/master/django_openid/templates/django_openid/this_is_an_openid_server.html)
+
+	* _from pinax_
+	
+		* django\_openid/already\_logged\_in.html [http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django\_openid/already\_logged\_in.html](http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django_openid/already_logged_in.html)
+		* django\_openid/associate.html [http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django\_openid/associate.html](http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django_openid/associate.html)
+		* django\_openid/associations.html [http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django\_openid/associations.html](http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django_openid/associations.html)
+		* django\_openid/regsiter.html [http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django\_openid/register.html](http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django_openid/register.html)
+		* django\_openid/regsitration\_closed.html [http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django\_openid/registration\_closed.html](http://github.com/pinax/pinax/blob/0.7.1/pinax/templates/default/django_openid/registration_closed.html)
 		
 	
 TemplateTags
