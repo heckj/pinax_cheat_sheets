@@ -24,7 +24,7 @@ Data Model
 
 * NoticeSetting
 
-	* user (foreign-key -> django.contrib.auth.User)
+	* user (foreign-key -> django.contrib.auth.models.User)
 	* notice_type (foreign-key -> NoticeType)
 	* medium (char - choices NOTICE_MEDIA)
 		* NOTICE_MEDIA
@@ -38,7 +38,7 @@ Data Model
 
 * Notice
 
-	* user (foreign-key -> django.contrib.auth.User)
+	* user (foreign-key -> django.contrib.auth.models.User)
 	* message (text)
 	* notice_type (foreign-key -> NoticeType)
 	* added (datetime)
@@ -81,7 +81,7 @@ Data Model
 
 * ObservedItem
 
-	* user (foreign-key -> django.contrib.auth.User)
+	* user (foreign-key -> django.contrib.auth.models.User)
 	* content_type (foreign-key -> django.contrib.contenttypes.ContentType)
 	* observed_object (foreign-key -> django.contrib.contenttypes.GenericForeignKey)
 	* notice_type (foreign-key -> NoticeType)

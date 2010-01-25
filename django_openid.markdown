@@ -32,7 +32,7 @@ Data Model
 
 * UserOpenidAssociation
 
-	* user (foreign-key -> django.contrib.auth.User)
+	* user (foreign-key -> django.contrib.auth.models.User)
 	* openid (char 255)
 	* created (datetime)
 	

@@ -24,7 +24,7 @@ Data Model
 
 * ObservedItem
 
-	* user (foreign-key -> django.contrib.auth.User)
+	* user (foreign-key -> django.contrib.auth.models.User)
 	* content_type (foreign-key -> django.contrib.contenttypes.ContentType)
 	* observed_object (foreign-key -> django.contrib.contenttypes.GenericForeignKey)
 	* notice_type (foreign-key -> NoticeType)

@@ -16,7 +16,7 @@ Data Model
 	
 * EmailAddress
 
-	* user (foreign-key -> django.contrib.auth.User)
+	* user (foreign-key -> django.contrib.auth.models.User)
 	* email (email)
 	* verified (boolean)
 	* primary (boolean)
