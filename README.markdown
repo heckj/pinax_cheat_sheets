@@ -18,3 +18,9 @@ You can find the source of the core of Pinax on [GitHub](http://github.com/) at 
 
 If you want to add some commentary or additional detail to these cheat sheets, PLEASE DO! Just fork away on GitHub, and send me a pull request to have your updates included here. The format I'm using for all these documents is currently markdown, simply because I know it reasonably well and it renders nicely by default on GitHub.
 
+_thanks,_
+
+_- joe_
+
+* _[http://github.com/heckj](http://github.com/heckj)_
+* _[http://www.rhonabwy.com/wp/](http://www.rhonabwy.com/wp/)_
