@@ -1,11 +1,11 @@
 uni_form
 ========
 
-_for uni_form version 0.6.0_
+_for uni_form version 0.7.0_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/pydanny/django-uni-form/tree/0.6.0](http://github.com/pydanny/django-uni-form/tree/0.6.0)
+Code for django-notification is online at [GitHub](http://github.com): [http://github.com/pydanny/django-uni-form/tree/0.7.0](http://github.com/pydanny/django-uni-form/tree/0.7.0)
 
-[Online usage documentation](http://github.com/pydanny/django-uni-form/blob/0.6.0/docs/usage.txt) and [README](http://github.com/pydanny/django-uni-form/blob/0.6.0/README.rst)
+[Online usage documentation](http://github.com/pydanny/django-uni-form/blob/0.7.0/docs/usage.txt) and [README](http://github.com/pydanny/django-uni-form/blob/0.7.0/README.rst)
 
 Data Model
 ----------
@@ -52,16 +52,16 @@ def my_view(request):
 `
 
 * _from uni\_form_
-	* uni\_form/errors.html [http://github.com/pydanny/django-uni-form/blob/0.6.0/uni\_form/templates/uni\_form/errors.html](http://github.com/pydanny/django-uni-form/blob/0.6.0/uni_form/templates/uni_form/errors.html)
-	* uni\_form/field.html [http://github.com/pydanny/django-uni-form/blob/0.6.0/uni\_form/templates/uni\_form/field.html](http://github.com/pydanny/django-uni-form/blob/0.6.0/uni_form/templates/uni_form/field.html)
-	* uni\_form/uni\_form.html [http://github.com/pydanny/django-uni-form/blob/0.6.0/uni\_form/templates/uni\_form/uni_form.html](http://github.com/pydanny/django-uni-form/blob/0.6.0/uni_form/templates/uni_form/uni_form.html)
-	* uni\_form/uni\_form\_jquery.html [http://github.com/pydanny/django-uni-form/blob/0.6.0/uni\_form/templates/uni\_form/uni_form_jquery.html](http://github.com/pydanny/django-uni-form/blob/0.6.0/uni_form/templates/uni_form/uni_form_jquery.html)
-	* uni\_form/whole\_uni\_form.html [http://github.com/pydanny/django-uni-form/blob/0.6.0/uni\_form/templates/uni\_form/whole_uni_form.html](http://github.com/pydanny/django-uni-form/blob/0.6.0/uni_form/templates/uni_form/whole_uni_form.html)
+	* uni\_form/errors.html [http://github.com/pydanny/django-uni-form/blob/0.7.0/uni\_form/templates/uni\_form/errors.html](http://github.com/pydanny/django-uni-form/blob/0.7.0/uni_form/templates/uni_form/errors.html)
+	* uni\_form/field.html [http://github.com/pydanny/django-uni-form/blob/0.7.0/uni\_form/templates/uni\_form/field.html](http://github.com/pydanny/django-uni-form/blob/0.7.0/uni_form/templates/uni_form/field.html)
+	* uni\_form/uni\_form.html [http://github.com/pydanny/django-uni-form/blob/0.7.0/uni\_form/templates/uni\_form/uni_form.html](http://github.com/pydanny/django-uni-form/blob/0.7.0/uni_form/templates/uni_form/uni_form.html)
+	* uni\_form/uni\_form\_jquery.html [http://github.com/pydanny/django-uni-form/blob/0.7.0/uni\_form/templates/uni\_form/uni_form_jquery.html](http://github.com/pydanny/django-uni-form/blob/0.7.0/uni_form/templates/uni_form/uni_form_jquery.html)
+	* uni\_form/whole\_uni\_form.html [http://github.com/pydanny/django-uni-form/blob/0.7.0/uni\_form/templates/uni\_form/whole_uni_form.html](http://github.com/pydanny/django-uni-form/blob/0.7.0/uni_form/templates/uni_form/whole_uni_form.html)
 	
 TemplateTags
 ------------
 
-* do_uni_form
+* do\_uni\_form
 	* You need to pass in at least the form object, and can also pass in the
     optional attrs string. Writing the attrs string is rather challenging so
     use of the objects found in uni_form.helpers is encouraged.
@@ -117,7 +117,7 @@ Filters
 * as_uni_errors
 * as_uni_field
 
-	`{% load uni_form %}
+	`{% load uni_form_tags %}
 	{% uni_form form helper %}`
 
 View Decorators
