@@ -149,6 +149,13 @@ Forms
 	
 	A form that creates a user, with no privileges, from the given username and password.
 
+ContextProcessor
+----------------
+
+* site\_wide\_announcements
+
+	Adds the site-wide announcements to the global context of templates.
+
 Constants
 ---------
 
