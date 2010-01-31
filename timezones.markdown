@@ -3,7 +3,7 @@ timezones
 
 _for timezones version 0.1.4_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/brosner/django-timezones/tree/0.1.X](http://github.com/brosner/django-timezones/tree/0.1.X)
+Code for timezones is online at [GitHub](http://github.com): [http://github.com/brosner/django-timezones/tree/0.1.X](http://github.com/brosner/django-timezones/tree/0.1.X)
 
 [Online usage documentation](http://github.com/brosner/django-timezones/blob/0.1.X/docs/how_to_use.txt)
 

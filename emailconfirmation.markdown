@@ -3,7 +3,7 @@ emailconfirmation
 
 _for emailconfiromation version 0.1.3_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/jtauber/django-email-confirmation](http://github.com/jtauber/django-email-confirmation)
+Code for emailconfirmation is online at [GitHub](http://github.com): [http://github.com/jtauber/django-email-confirmation](http://github.com/jtauber/django-email-confirmation)
 
 [Online usage documentation](http://github.com/jtauber/django-email-confirmation/blob/master/docs/index.txt)
 

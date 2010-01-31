@@ -3,7 +3,7 @@ waitinglist
 
 _for pinax version 0.7.1_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/pinax/pinax/tree/0.7.1/pinax/apps/signup_codes](http://github.com/pinax/pinax/tree/0.7.1/pinax/apps/signup_codes)
+Code for waitinglist is online at [GitHub](http://github.com): [http://github.com/pinax/pinax/tree/0.7.1/pinax/apps/signup_codes](http://github.com/pinax/pinax/tree/0.7.1/pinax/apps/signup_codes)
 
 Data Model
 ----------

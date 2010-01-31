@@ -3,7 +3,7 @@ announcements
 
 _for announcements version 0.1.0_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/pinax/django-announcements/tree/0.1.0](http://github.com/pinax/django-announcements/tree/0.1.0)
+Code for announcements is online at [GitHub](http://github.com): [http://github.com/pinax/django-announcements/tree/0.1.0](http://github.com/pinax/django-announcements/tree/0.1.0)
 
 [Online usage documentation](http://github.com/pinax/django-announcements/blob/0.1.0/docs/usage.txt)
 

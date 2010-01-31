@@ -3,7 +3,7 @@ account
 
 _for pinax 0.7.1_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/pinax/pinax/tree/0.7.1/pinax/apps/account/](http://github.com/pinax/pinax/tree/0.7.1/pinax/apps/account/)
+Code for pinax is online at [GitHub](http://github.com): [http://github.com/pinax/pinax/tree/0.7.1/](http://github.com/pinax/pinax/tree/0.7.1/)
 
 Data Model
 ----------

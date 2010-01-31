@@ -1,9 +1,9 @@
 uni_form
 ========
 
-_for uni_form version 0.6.0_
+_for uni\_form version 0.6.0_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/pydanny/django-uni-form/tree/0.6.0](http://github.com/pydanny/django-uni-form/tree/0.6.0)
+Code for uni\_form is online at [GitHub](http://github.com): [http://github.com/pydanny/django-uni-form/tree/0.6.0](http://github.com/pydanny/django-uni-form/tree/0.6.0)
 
 [Online usage documentation](http://github.com/pydanny/django-uni-form/blob/0.6.0/docs/usage.txt) and [README](http://github.com/pydanny/django-uni-form/blob/0.6.0/README.rst)
 

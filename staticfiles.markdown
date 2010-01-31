@@ -3,7 +3,7 @@ staticfiles
 
 _for staticfiles version 0.1.2_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/jezdez/django-staticfiles/tree/0.1.2](http://github.com/jezdez/django-staticfiles/tree/0.1.2)
+Code for staticfiles is online at [GitHub](http://github.com): [http://github.com/jezdez/django-staticfiles/tree/0.1.2](http://github.com/jezdez/django-staticfiles/tree/0.1.2)
 
 [Online usage documentation](http://github.com/jezdez/django-staticfiles/blob/0.1.2/README)
 

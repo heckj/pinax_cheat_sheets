@@ -3,7 +3,7 @@ markdown template
 
 _for pagination version 1.0.5.1_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/brosner/django-pagination](http://github.com/brosner/django-pagination) and at Google Code at  [http://code.google.com/p/django-pagination/](http://code.google.com/p/django-pagination/)
+Code for pagination is online at [GitHub](http://github.com): [http://github.com/brosner/django-pagination](http://github.com/brosner/django-pagination) and at Google Code at  [http://code.google.com/p/django-pagination/](http://code.google.com/p/django-pagination/)
 
 [Online usage documentation](http://github.com/brosner/django-pagination/blob/master/docs/usage.txt)
 

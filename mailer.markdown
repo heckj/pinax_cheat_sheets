@@ -3,7 +3,7 @@ mailer
 
 _for mailer version 0.1.1_
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/jtauber/django-mailer/](http://github.com/jtauber/django-mailer/)
+Code for mailer is online at [GitHub](http://github.com): [http://github.com/jtauber/django-mailer/](http://github.com/jtauber/django-mailer/)
 
 [Online usage documentation](http://github.com/jtauber/django-mailer/blob/master/docs/usage.txt)
 

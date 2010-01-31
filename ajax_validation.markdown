@@ -3,7 +3,7 @@ ajax_validation
 
 _for ajax\_validation version 0.1.3__
 
-Code for django-notification is online at [GitHub](http://github.com): [http://github.com/alex/django-ajax-validation/tree/0.1.3](http://github.com/alex/django-ajax-validation/tree/0.1.3)
+Code for ajax\_validation is online at [GitHub](http://github.com): [http://github.com/alex/django-ajax-validation/tree/0.1.3](http://github.com/alex/django-ajax-validation/tree/0.1.3)
 
 [Online usage documentation](http://github.com/alex/django-ajax-validation/blob/0.1.3/docs/usage.txt)
 
